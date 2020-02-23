@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- bootstrap css & js -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script> -->
+
+    <!--Fontawesome-->
+    <!-- <script src="https://kit.fontawesome.com/6809eb288c.js"></script> -->
+
+    <title>Sticky Navbar - Vanilla JS </title>
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="logo">Ode Dahay</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </header>
+    <section class="banner"></section>
+
+    <script type="text/javascript">
+      window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+
+        header.classList.toggle('sticky', window.scrollY > 0);
+
+      })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  </body>
+</html>
